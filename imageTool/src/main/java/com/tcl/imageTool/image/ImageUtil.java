@@ -387,9 +387,8 @@ public class ImageUtil {
 		op.addImage("-");
 		Pipe pipeIn = new Pipe(is, null);
 		ByteArrayOutputStream os = new ByteArrayOutputStream();
-		op.addRawArgs("." + formatType);
 		Pipe pipeOut = new Pipe(null, os);
-		op.addImage("-");
+		op.addImage(formatType + ":-");
 
 		ConvertCmd convert = new ConvertCmd(true);
 		convert.setInputProvider(pipeIn);
