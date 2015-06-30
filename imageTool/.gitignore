@@ -1,0 +1,7 @@
+/target/
+/dist
+/.settings
+/bin
+/.classpath
+/.project
+/src/test/
